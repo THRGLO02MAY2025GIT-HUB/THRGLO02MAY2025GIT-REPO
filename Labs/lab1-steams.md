@@ -1,4 +1,4 @@
-# Lab 1: Refactoring Code to Apply Stream API and Date Time API
+# Lab 1: Refactoring Code to Apply Stream API and Date Time API [30 minutes]
 
 ## Lab Activities
 
