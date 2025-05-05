@@ -26,6 +26,7 @@ public class DiamondOperatorDemo {
 
         Map<String,List<Transaction>> legacyTransactions1 = new HashMap<>();
         // Task 1 : Add "EUR", "JPY" to the currency list.....
+        legacyTransactions1.put("EUR", new ArrayList<Transaction>());
         // Java 7
         TransactionProcessor<Transaction> legacyProcessor = new TransactionProcessor<Transaction>() {
             @Override
@@ -49,9 +50,20 @@ public class DiamondOperatorDemo {
         // IC : try adding EUR, JPY
         System.out.println("Legacy Transactions: (USD)" + legacyTransactions) ;
 
-        // Task 2 : Add transactions to legacyProcessor
-        // Task 3 : Add transaction to modernProcessor
+        legacyTransactions1.get("EUR").add(new Transaction("T1", BigDecimal.valueOf(100.50)));
+        legacyTransactions1.get("EUR").add(new Transaction("T2", BigDecimal.valueOf(200.50)));
+        System.out.println("Legacy Transactions: (EUR)" + legacyTransactions1) ;
 
+        // Task 2 : Add transactions to legacyProcessor
+        System.out.println("Processing transaction using legacyProcessor:");
+        for(Transaction t: legacyTransactions.get("USD")){
+            legacyProcessor.process(t);
+        }
+        // Task 3 : Add transaction to modernProcessor
+        System.out.println("Processing transaction using modernProcessor:");
+        for(Transaction t: legacyTransactions1.get("USD")){
+            legacyProcessor.process(t);
+        }
         // Exploration : Take your existing code base and see chances of make code simpler.
     }
 }
