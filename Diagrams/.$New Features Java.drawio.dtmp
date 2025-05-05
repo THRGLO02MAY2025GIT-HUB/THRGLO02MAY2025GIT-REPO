@@ -1,0 +1,170 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="3">
+  <diagram name="Top New Features That I can Explore" id="H-lTtJw_paa2dJG2KekU">
+    <mxGraphModel dx="879" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-1" value="Overview Of New Features" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-2" value="Java8&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-3" value="Java 17" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-4" value="The diamond operator &amp;lt;&amp;gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="70" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-5" value="Stream API enhancements" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="180" y="280" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-6" value="Roadmap" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-7" value="Collection Factory Methods" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="330" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-8" value="Private Methods in Interfaces" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="460" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-9" value="Walking through the CallStack" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="810" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-10" value="CompactStrings" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="545" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-11" value="SwitchExpressions" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="530" y="540" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-12" value="Compact Number Formatting&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="740" y="535" width="115" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-13" value="&lt;div&gt;TextBlocks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="640" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-14" value="&lt;div&gt;Records&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="660" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-15" value="&lt;div&gt;Sealed Classes&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="747.5" y="670" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-16" value="&lt;div&gt;JPMS&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="60" y="535" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-17" value="Generics with Diamond Operators" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="70" y="385" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-18" value="Effectively work with streams with new methods/ functionality" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="180" y="395" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-19" value="Makes working with Collections way easier" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="330" y="380" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-20" value="abstract methods" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="470" y="385" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-21" value="&amp;nbsp;methods with body (static / default methods)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="570" y="385" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-22" value="private methods" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="660" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-23" value="The API to walk through the call stack is highly effective" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="810" y="380" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-24" value="RoadMap / Idea" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-25" value="Concept" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="280" y="890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-26" value="Apply" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-27" value="Review /Refactor" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-32" value="The Diamond operator&amp;nbsp;&lt;div&gt;can be used with&lt;/div&gt;&lt;div&gt;anonymous inner classes from Java 9+&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="150" width="190" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="it7jR1w6A2HO88eLoIti" name="Terminology">
+    <mxGraphModel dx="1636" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-1" value="JEP / JDK Enhancement Proposal" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AD6r4I_cpZdrooL8gMmH-2" target="AD6r4I_cpZdrooL8gMmH-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-2" value="Process" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-3" value="Java Community" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AD6r4I_cpZdrooL8gMmH-5" target="AD6r4I_cpZdrooL8gMmH-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-5" value="Purpose" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AD6r4I_cpZdrooL8gMmH-6" target="AD6r4I_cpZdrooL8gMmH-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-6" value="Propose" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AD6r4I_cpZdrooL8gMmH-8" target="AD6r4I_cpZdrooL8gMmH-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-8" value="Discuss" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-10" value="document signficant changes." style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="680" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-12" value="Process" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AD6r4I_cpZdrooL8gMmH-13" value="Practice" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8vsUmJd-rWdS67Mih5kZ-1" value="Methodology" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8vsUmJd-rWdS67Mih5kZ-2" value="Break and Make" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8vsUmJd-rWdS67Mih5kZ-5" value="Context" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VedadEQwNp0A-uT3c_Re-1" value="Process" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="F4DoPFH3YsymMdyTXWiu" name="Demo">
+    <mxGraphModel dx="1143" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uzIxB_AXCy2PeI7c9Qlu-2" value="CREATE THE TRANSACTION PROCESSOR" style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uzIxB_AXCy2PeI7c9Qlu-3" value="CREATE DOMAIN CLASS TRANSACTION" style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uzIxB_AXCy2PeI7c9Qlu-4" value="PERFORM A LIST OF TRANSACTIONS OF USD &amp;amp; EUR" style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="160" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
