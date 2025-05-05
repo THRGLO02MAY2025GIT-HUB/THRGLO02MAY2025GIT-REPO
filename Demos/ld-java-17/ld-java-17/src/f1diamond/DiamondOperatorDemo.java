@@ -61,8 +61,8 @@ public class DiamondOperatorDemo {
         }
         // Task 3 : Add transaction to modernProcessor
         System.out.println("Processing transaction using modernProcessor:");
-        for(Transaction t: legacyTransactions1.get("USD")){
-            legacyProcessor.process(t);
+        for(Transaction t: legacyTransactions1.get("EUR")){
+            modernProcessor.process(t);
         }
         // Exploration : Take your existing code base and see chances of make code simpler.
     }
