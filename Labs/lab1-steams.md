@@ -3,7 +3,7 @@
 ## Lab Activities
 
 1. **Lab Activity 1A**: Refactor the code to display the grouped results with the day in a formatted manner.
-2. **Lab Activity 2B**: Apply streams and collectors to perform the task.
+2. **Lab Activity 1B**: Apply streams and collectors to perform the task.
 
 ### Hints:
 - Make a collection of `modernPayments`.
