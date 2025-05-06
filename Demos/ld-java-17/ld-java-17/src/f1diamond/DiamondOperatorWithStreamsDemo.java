@@ -50,14 +50,12 @@ public class DiamondOperatorWithStreamsDemo {
         List<Payment> legacyPayments = new ArrayList<>();
         List<Payment> modernPayments = new ArrayList<>();
         legacyPayments.add(new Payment("P10", BigDecimal.valueOf(50), LocalDateTime.now().minusDays(2)));
-
         Comparator<Payment> legacyComparator = new Comparator<Payment>() {
             @Override
             public int compare(Payment p1, Payment p2) {
                 return p1.getAmount().compareTo(p2.getAmount());
             }
         };
-
 
         Comparator<Payment> moderateComparator = new Comparator<>() {
             @Override
@@ -66,9 +64,7 @@ public class DiamondOperatorWithStreamsDemo {
             }
         };
 
-
         Comparator<Payment> modernComparator = new Comparator<>() {
-
             @Override
             public int compare(Payment p1, Payment p2) {
                 return p1.getAmount().compareTo(p2.getAmount());
@@ -105,7 +101,6 @@ public class DiamondOperatorWithStreamsDemo {
             payments.forEach(p -> System.out.printf("  - %s: $%s%n", p.getId(), p.getAmount()));
         });
 
-
         // Stream grouping the modern way with sleek code (Diamond operator)
         Stream<Payment> paymentsStream = modernPayments.stream();
        Map<String, List<Payment>> groupedModernPayments =  paymentsStream.collect(Collectors.groupingBy(
@@ -122,7 +117,6 @@ public class DiamondOperatorWithStreamsDemo {
 //        Use the following methods :
 //        stream(), collect, Collectors.groupingBy.......
 //        Perform the sorting using th modernComparator
-
 
         // Result : Formatted
         // Legacy Payments grouped by Day, Sorted by amount
