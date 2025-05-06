@@ -1,5 +1,5 @@
 package f1diamond;
-
+import java.util.function.Function;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
