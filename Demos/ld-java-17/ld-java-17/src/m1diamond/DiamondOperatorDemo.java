@@ -1,4 +1,4 @@
-package f1diamond;
+package m1diamond;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
