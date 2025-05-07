@@ -11,4 +11,3 @@
 5. **toList**: Collect the transactions into a list using the `toList` method. Try mutating the resulting list and observe its behavior.
 
 6. **Bonus**: Experiment with error handling in the `takeWhile` method by simulating scenarios where exceptions might occur during predicate evaluation.
-
