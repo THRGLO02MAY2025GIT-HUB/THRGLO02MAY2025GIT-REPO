@@ -3,6 +3,7 @@ package m2streamapienhancements;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ModernStreamAPIDemo {
@@ -33,9 +34,29 @@ public class ModernStreamAPIDemo {
         Transaction nullableTransaction = retreivePendingTransaction();
         // Process the stream and handle the null gracefully.
 
-        //4. teeing (Lab)  : Calculate average and total using TransactionSummary class.
+        //6. teeing (Lab)  : Calculate average and total using TransactionSummary class.
         // Hint : using Collectiors and teeing method.
+        // A paradigm shift from imperative approach to a stream approach
 
+        // Imperative approach, what to do, a lot of how to do?
+        double totalAmount = 0;
+        for (Transaction transaction : transactions) {
+            totalAmount += transaction.getAmount().doubleValue();
+        }
+        double averageAmount = totalAmount / transactions.size();
+        System.out.println("Imperative Approach - Average: " + averageAmount + ", Total: " + totalAmount);
+
+        // Imperative approach, focus more on what to do, a lot of how to do will be taken care by the Stream API?
+        TransactionSummary summary = transactions.stream()
+                .collect(
+                        Collectors.teeing(
+                                Collectors.averagingDouble(t -> t.getAmount().doubleValue()),
+                                Collectors.summingDouble(t -> t.getAmount().doubleValue()),
+                                        (avg, sum) -> new TransactionSummary(avg,sum)
+                        )
+                );
+
+        System.out.println("\n  Transaction summary : "+summary);
         //Lab : use the toList method to collect the transactions into a list and try mutating it.
 
     }
