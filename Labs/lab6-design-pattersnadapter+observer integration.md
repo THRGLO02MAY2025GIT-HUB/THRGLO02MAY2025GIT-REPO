@@ -62,21 +62,21 @@ After completing the lab, you should have a working payment processing system th
 
 ### Expected Output
 ```
-Making payment through PayPal:
-Processing payment of $100.0 with PayPal.
-User Mr.Passion notified on mobile. Payment status: Payment of $100.0 processed successfully.  
-User Mr.Passion notified on website. Payment status: Payment of $100.0 processed successfully.  
-
-User Ms.Grace notified on mobile. Payment status: Payment of $100.0 processed successfully.  
-User Ms.Grace notified on website. Payment status: Payment of $100.0 processed successfully.  
+Making payment through PayPal:  
+Processing payment of $120.0 with PayPal.  
+User Mr.Passion notified on mobile. Payment status: Payment of $120.0 processed successfully.  
+User Mr.Passion notified on website. Payment status: Payment of $120.0 processed successfully.  
 
 Making payment through Stripe:  
-Charging $150.0 with Stripe.  
+Charging $200.0 with Stripe.  
+User Ms.Grace notified on mobile. Payment status: Payment of $200.0 processed successfully.  
+User Ms.Grace notified on website. Payment status: Payment of $200.0 processed successfully.  
+
+Making payment through Square:  
+Processing payment of $150.0 with Square.  
 User Mr.Passion notified on mobile. Payment status: Payment of $150.0 processed successfully.  
 User Mr.Passion notified on website. Payment status: Payment of $150.0 processed successfully.  
 
-User Ms.Grace notified on mobile. Payment status: Payment of $150.0 processed successfully.  
-User Ms.Grace notified on website. Payment status: Payment of $150.0 processed successfully.  
 ```
 ## Reflection Questions
 
