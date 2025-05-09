@@ -1,4 +1,5 @@
 # Lab Exercise: Integrating Adapter and Observer Patterns
+### Duration : 1 hour
 
 In this lab, you will integrate the **Adapter Pattern** with the **Observer Pattern** to build a payment system that notifies different users on their mobile and web-site when their payments are processed. The Adapter Pattern unifies multiple payment gateways (e.g., PayPal, Stripe, Square) under a common interface, while the Observer Pattern notifies users about transaction statuses.
 
