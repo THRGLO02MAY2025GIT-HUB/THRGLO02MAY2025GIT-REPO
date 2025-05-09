@@ -60,6 +60,24 @@ After completing the lab, you should have a working payment processing system th
 
 ---
 
+### Expected Output
+```
+Making payment through PayPal:
+Processing payment of $100.0 with PayPal.
+User Mr.Passion notified on mobile. Payment status: Payment of $100.0 processed successfully.  
+User Mr.Passion notified on website. Payment status: Payment of $100.0 processed successfully.  
+
+User Ms.Grace notified on mobile. Payment status: Payment of $100.0 processed successfully.  
+User Ms.Grace notified on website. Payment status: Payment of $100.0 processed successfully.  
+
+Making payment through Stripe:  
+Charging $150.0 with Stripe.  
+User Mr.Passion notified on mobile. Payment status: Payment of $150.0 processed successfully.  
+User Mr.Passion notified on website. Payment status: Payment of $150.0 processed successfully.  
+
+User Ms.Grace notified on mobile. Payment status: Payment of $150.0 processed successfully.  
+User Ms.Grace notified on website. Payment status: Payment of $150.0 processed successfully.  
+```
 ## Reflection Questions
 
 1. How does the Adapter Pattern simplify the integration of multiple payment gateways?
