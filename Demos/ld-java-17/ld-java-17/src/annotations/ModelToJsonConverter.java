@@ -35,7 +35,6 @@ public class ModelToJsonConverter {
    }
     private String getJsonString(Object object) throws IllegalAccessException {
        // Lab : Create a Map containing the JSON field and the Value and return a JSON String
-//        Customer{firstName='john', lastName='rambo', noOfSuccessfulTransactions='50'}
 //        Expected Output :  {"firstName":"John", "lastName":"rambo", "successfulTransactionFormatted":"50"}
        return null;
     }
@@ -46,7 +45,6 @@ public class ModelToJsonConverter {
 
     public String convertToJson(Object object) throws JsonSerializationException {
        try {
-
            checkIfSerializable(object);
            initializeModel(object);
            return getJsonString(object);
