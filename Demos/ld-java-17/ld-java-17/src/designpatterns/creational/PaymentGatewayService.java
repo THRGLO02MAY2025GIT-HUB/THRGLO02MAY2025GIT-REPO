@@ -1,5 +1,5 @@
 package designpatterns.creational;
-
+// Try to convert this singleton to a Tread Safe Singleton
 public class PaymentGatewayService extends Object {
     // Step 1 : Declare a private static instance
     private static  PaymentGatewayService instance;
