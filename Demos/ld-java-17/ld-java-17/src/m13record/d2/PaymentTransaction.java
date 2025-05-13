@@ -1,4 +1,5 @@
 package m13record.d2;
+
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.Currency;
@@ -22,10 +23,16 @@ record PaymentTransaction(
     }
 
     // Lab : Refactor code to use the compact canonical constructor
-    // Compact canonical constructor
+    // Use Compact canonical constructor
 //    public PaymentTransaction {
 //        validateAmount(amount);
 //    }
+
+    // Lab : Perform constructor overloading
+//    public PaymentTransaction(String id, BigDecimal amount, Currency currency) {
+    // required code snippet here.
+//    }
+
     // Private validation method
     private static void validateAmount(BigDecimal amount) {
         System.out.println("Inside Validation!");
@@ -34,7 +41,8 @@ record PaymentTransaction(
         }
     }
 
-    // Lab : Override the toString method
+    // Lab : Override the toString method, add (PMT before the transaction ID)
+    // if transactionID is "TX001" the expected result is PMTTXN001.
     // Lab : try overriding the getters
 
     public static void main(String[] args) {
@@ -45,7 +53,7 @@ record PaymentTransaction(
 //                Currency.getInstance("USD"),
 //        );
 
-      // Create transactions using different constructors
+        // Create transactions using different constructors
         PaymentTransaction tx2 = new PaymentTransaction(
                 "TX001",
                 new BigDecimal(500),
