@@ -76,7 +76,7 @@ The `ModelToJsonConverter` class is responsible for converting a Java object int
 
 Expected Output:
 ```json
-Expected Output: {"firstName":"John", "lastName":"rambo", "successfulTransactionFormatted":"50"}
+Expected Output: {"firstName":"John", "lastName":"Rambo", "successfulTransactionFormatted":"50"}
 ```
 
 ---
@@ -143,7 +143,7 @@ public class ModelToJsonConverter {
      */
     private String getJsonString(Object object) throws IllegalAccessException {
         // Write code here : Create a Map containing the JSON field and the value, and return a JSON string
-        // Expected Output: {"firstName":"John", "lastName":"rambo", "successfulTransactionFormatted":"50"}
+        // Expected Output: {"firstName":"John", "lastName":"Rambo", "successfulTransactionFormatted":"50"}
         return null;
     }
 
