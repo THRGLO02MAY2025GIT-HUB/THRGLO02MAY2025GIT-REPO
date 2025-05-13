@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="9">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="10">
   <diagram name="Top New Features That I can Explore" id="H-lTtJw_paa2dJG2KekU">
     <mxGraphModel dx="786" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1208,6 +1208,65 @@
         </mxCell>
         <mxCell id="pHlhKYJWTGNEC-G_tJp_-10" value="Record classes / sealed classes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
           <mxGeometry x="970" y="2690" width="190" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zhutuG5q-Co7L2ekMEQi" name="New Features">
+    <mxGraphModel dx="786" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mmbSVh44bnV5rre7WxAz-1" value="Records" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-2" value="Concise way to model immutable data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-3" value="relates to DTO&#39;s" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-4" value="simple data carrying objects&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-5" value="minimal boilerplate code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-6" value="Using Records" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="100" y="330" width="750" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-7" value="Immutable. Transactions where data should not be modified after creation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="390" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-8" value="Conciseness:&lt;div&gt;automatically generate constructors, equals, hashCode etc&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="250" y="390" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-9" value="Validations&lt;div&gt;Validate data during creation of objects&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-10" value="Thread Safety&lt;div&gt;Multi-theaded setups, payment systems&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="550" y="390" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-11" value="Data Representation&lt;div&gt;Data in records can be passed between services or mapped to databses too&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-12" value="Records" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="150" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-14" value="Compatible with new features" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="570" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-15" value="Can be used with Generics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="620" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-16" value="Annotation suport" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="670" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-17" value="Default &amp;amp; Static Methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="720" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmbSVh44bnV5rre7WxAz-18" value="Streams Support" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="770" width="150" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
