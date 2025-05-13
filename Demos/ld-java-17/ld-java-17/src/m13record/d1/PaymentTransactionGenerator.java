@@ -1,4 +1,4 @@
-package m13record;
+package m13record.d1;
 
 // Create a basic record for a payment transaction
 // Declare the components in the record
