@@ -245,3 +245,22 @@ public interface TransactionProcessor {
     }
 }
 ```
+
+:beginner: _**Records**_  
+
+Modern Java syntax for immutable data transfer objects  
+Records provide a concise way to create classes that hold data  
+Useful for financial transactions and data models  
+
+
+## Before vs After Records: Implementation Comparison
+
+| Aspect            | Pre-Records (Traditional Class)                            | With Records                           | Benefits                        |
+|-------------------|----------------------------------------------------------|---------------------------------------|--------------------------------|
+| Class Declaration | `public class Transaction { private final String id; ... }` | `public record Transaction(String id)` | Reduced boilerplate, cleaner syntax |
+| Immutability      | Manual final fields + private setters                     | Automatic immutability                 | Better thread safety, less error-prone |
+| Constructor       | Manual implementation required                            | Auto-generated canonical constructor   | Less code maintenance          |
+| Getters          | `public String getId() { return id; }`                    | Auto-generated `id()` method          | Concise accessor methods       |
+| equals/hashCode   | Manual implementation needed                              | Auto-generated                        | Consistent object comparison   |
+| toString          | Custom implementation required                            | Auto-generated readable format        | Better debugging experience    |
+| Encapsulation    | Manual private fields + getters                           | Automatic component encapsulation     | Safer data handling           |
