@@ -22,6 +22,8 @@ public class MultiThreadedEx {
 //            String justToAddSomeProcessingLoad = "" + i;
 //        }
         System.out.println();
+        // join evenThread and oddThread
+        // sleep for 5 seconds
         System.out.println("End of the program! " + currentThread.getName());
     }
 }
