@@ -1,4 +1,4 @@
-package designpatterns.labs;
+package labs.adapterwithobserver;
 
 class PaymentService {
     private PaymentProcessor paymentProcessor;
@@ -13,8 +13,7 @@ class PaymentService {
     public void processPayment(double amount) {
         // Process request using the appropriate gateway
         paymentProcessor.processPayment(amount);
-
         // Update the payment status and notify observers
-        paymentStatusSubject.setStatus("Payment of $" + amount + "processed successfully");
+        paymentStatusSubject.setStatus("Payment of $" + amount + " processed successfully");
     }
 }

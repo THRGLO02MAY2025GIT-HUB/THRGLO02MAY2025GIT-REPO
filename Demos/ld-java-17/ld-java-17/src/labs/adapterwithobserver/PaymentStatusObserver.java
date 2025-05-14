@@ -1,6 +1,6 @@
-package designpatterns.labs;
+package labs.adapterwithobserver;
 
 //Observer interface for receiving updates
-public interface PaymentStatusObserver {
+ interface PaymentStatusObserver {
     void update(String status);
 }

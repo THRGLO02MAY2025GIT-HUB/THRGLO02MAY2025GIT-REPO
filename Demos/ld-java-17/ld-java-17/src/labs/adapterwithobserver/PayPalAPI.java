@@ -1,7 +1,7 @@
-package designpatterns.labs;
+package labs.adapterwithobserver;
 
 //Simulated Payment API
-public class PayPalAPI {
+ class PayPalAPI {
     public void makePayment(double amount) {
         System.out.println("Processing payment of $" + amount + " with PayPal.");
     }

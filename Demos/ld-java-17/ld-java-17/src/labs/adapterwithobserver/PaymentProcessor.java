@@ -1,6 +1,6 @@
-package designpatterns.labs;
+package labs.adapterwithobserver;
 
 // Using the Adapter pattern : Creating a unified interfaces
-public interface PaymentProcessor {
+ interface PaymentProcessor {
     void processPayment(double amount);
 }
