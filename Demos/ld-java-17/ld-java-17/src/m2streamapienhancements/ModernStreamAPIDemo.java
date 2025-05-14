@@ -20,7 +20,7 @@ public class ModernStreamAPIDemo {
         //1. takeWhile :
         System.out.println("Scenario : Process the small transactions!");
         transactions
-                .stream()
+                .parallelStream()
                 .takeWhile( t -> t.getAmount().compareTo(BigDecimal.valueOf(200)) < 0)
                 .forEach(System.out::println);
 
