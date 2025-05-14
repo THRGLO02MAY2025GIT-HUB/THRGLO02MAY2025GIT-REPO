@@ -11,7 +11,7 @@ package multithreading;
 
 public class MultiThreadedEx {
     public static void main(String[] args) {
-        System.out.println("Multithreaded Threaded App! ONE process with TWO Threads");
+        System.out.println("Multithreaded Threaded App! ONE process with Three Threads");
         Thread currentThread = Thread.currentThread();
         currentThread.setName("Thread-main");
         System.out.println(currentThread.getName());
