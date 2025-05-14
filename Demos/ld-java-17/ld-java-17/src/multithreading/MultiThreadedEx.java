@@ -57,6 +57,9 @@ class EvenThread extends Thread {
 }
 
 // Practice : Create the odd thread
-class OddThread  extends ComputeOdd {
-
+class OddThread  extends ComputeOdd implements Runnable {
+    @Override
+    public void run() {
+        odd();
+    }
 }
