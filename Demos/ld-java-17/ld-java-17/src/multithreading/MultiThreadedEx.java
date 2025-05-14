@@ -9,8 +9,6 @@ package multithreading;
 // Implement the Odd thead.
 // The program should have total of three threads to do the work.
 
-
-
 public class MultiThreadedEx {
     public static void main(String[] args) {
         System.out.println("Multithreaded Threaded App! ONE process with TWO Threads");
