@@ -158,7 +158,7 @@ class OddThread  extends ComputeOdd implements Runnable {
 
 Expected Output:  
 ```
-Multithreaded Threaded App! ONE process with TWO Threads  
+Multithreaded Threaded App! ONE process with THREEE Threads  
 Thread-main  
 EVEN 2 Thread-even  
 EVEN 4 Thread-even  
