@@ -1,5 +1,5 @@
 package labs.adapterwithobserver;
-
+// Lab : Refactor the code to make it a singleton with Double-Checked Locking and ensure that changes made by one thread are immediately visible to other threads
 class PaymentService {
     private PaymentProcessor paymentProcessor;
     private PaymentStatusSubject paymentStatusSubject;

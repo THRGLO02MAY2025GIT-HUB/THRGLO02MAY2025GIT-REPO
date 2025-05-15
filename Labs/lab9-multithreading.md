@@ -1,172 +1,232 @@
-# Lab 9: Multithreading in Java  
+# Lab: Local Variable Type Inference (LVTI) Best Practices in Java  
 30 Minutes  
 
-In this lab, you will explore multithreading in Java by creating and managing multiple threads. You will refactor code to improve thread naming, ensure proper thread synchronization, and handle exceptions effectively.  
+In this lab, you will explore the use of Local Variable Type Inference (`var`) in Java. You will analyze a fintech codebase related to loan management, refactor code to use `var` appropriately, and identify scenarios where explicit types are preferred. The goal is to follow best practices for readability and maintainability.
 
-## Objective  
+## Objective
 
-- Understand the basics of multithreading in Java.  
-- Refactor code to rename threads dynamically.  
-- Ensure the main thread waits for other threads to complete execution.  
-- Implement a delay after thread execution.  
-- Handle checked exceptions gracefully.  
+- Understand when to use `var` for local variables in Java.
+- Refactor code to use `var` only where type inference is clear and beneficial.
+- Avoid using `var` in situations where it reduces code clarity.
+- Apply best practices for exception handling and resource management with `var`.
 
----  
+---
 
-## Code Overview  
+## Code Overview
 
-The program demonstrates multithreading by creating two threads: `EvenThread` and `OddThread`. The `EvenThread` prints even numbers, while the `OddThread` prints odd numbers. The main thread waits for both threads to complete before printing a final message.  
+The program simulates a loan management system with classes for `Loan`, `Customer`, and `LoanService`. The `LoanService` class demonstrates various uses of `var` for local variables, collections, and try-with-resources.
 
-### Key Features  
+### Key Features
 
-1. **Thread Naming**:  
-    - Rename the `EvenThread` to "Thread-even".  
-    - Ensure all threads have meaningful names.  
+1. **Appropriate Use of `var`**:  
+    - Use `var` for local variables where the type is obvious from the right-hand side.
+    - Avoid `var` for field declarations and when the type is not clear.
 
-2. **Thread Synchronization**:  
-    - Use the `join` method to ensure the main thread waits for `EvenThread` and `OddThread` to complete.  
+2. **Collections and Generics**:  
+    - Use `var` with collections only when the generic type is clear from the assignment.
 
-3. **Delay After Execution**:  
-    - Add a 5-second delay after printing "End of the program!".  
-    - Print "Thank you!!!" after the delay.  
+3. **Try-with-Resources**:  
+    - Use `var` for resources when the type is evident.
 
 4. **Exception Handling**:  
-    - Catch and handle checked exceptions such as `InterruptedException`.  
+    - Do not use `var` for exception variables in catch blocks.
 
-5. **OddThread Implementation**:  
-    - Refactor the `OddThread` class to implement the `Runnable` interface.  
+5. **Explicit Types for Clarity**:  
+    - Use explicit types when the type cannot be easily inferred or when it improves readability.
 
----  
+---
 
-## Lab Instructions  
+## Lab Instructions
 
-### Step 1: Refactor Thread Naming  
+### Step 1: Analyze and Refactor Field Declarations
 
-1. Rename the running `EvenThread` to "Thread-even".  
-2. Ensure the running `OddThread` has a meaningful name, such as "Thread-odd".  
+1. Identify and correct any use of `var` in field declarations.  
+2. Ensure all fields use explicit types.
 
----  
+---
 
-### Step 2: Synchronize Threads  
+### Step 2: Refactor Local Variables with `var`
 
-1. Use the `join` method to ensure the main thread waits for `EvenThread` and `OddThread` to complete execution.  
-2. Verify that "End of the program!" is printed only after both threads finish.  
+1. Use `var` for local variables where the type is clear from the assignment (e.g., `var applicationDate = LocalDate.now();`).  
+2. Avoid `var` where the type is not obvious (e.g., method calls with unclear return types).
 
----  
+---
 
-### Step 3: Add Delay and Final Message  
+### Step 3: Collections and Generics
 
-1. Add a 5-second delay after printing "End of the program!".  
-2. Print "Thank you!!!" after the delay.  
+1. Use `var` for collections only when the generic type is clear from the right-hand side.  
+2. Refactor any ambiguous uses of `var` in collections to use explicit types.
 
----  
+---
 
-### Step 4: Handle Exceptions  
+### Step 4: Try-with-Resources
 
-1. Catch and handle `InterruptedException` during thread synchronization and delay.  
-2. Print appropriate error messages if exceptions occur.  
+1. Use `var` for resources in try-with-resources blocks only when the type is clear.  
+2. Refactor any unclear uses to explicit types.
 
----  
+---
 
-### Step 5: Implement OddThread  
+### Step 5: Exception Handling
 
-1. Refactor the `OddThread` class to implement the `Runnable` interface.  
-2. Ensure the `OddThread` prints odd numbers from 1 to 50.  
+1. Do not use `var` for exception variables in catch blocks.  
+2. Refactor any such usage to use explicit exception types.
 
----  
+---
 
-## Deliverables  
+## Deliverables
 
-1. A refactored `EvenThread` with a meaningful name.  
-2. A properly implemented `OddThread` using the `Runnable` interface.  
-3. A synchronized main thread that waits for other threads to complete.  
-4. A delay and final message after thread execution.  
-5. Exception handling for thread operations.  
+1. A refactored `LoanService` class following LVTI best practices.
+2. Correct use of `var` for local variables and resources.
+3. Explicit types for fields, ambiguous local variables, and exception variables.
+4. Comments explaining why `var` is or isn't used in each case.
 
----  
+---
 
-## Code Template to Start With  
+## Code Template to Start With
 
 ```java
-package multithreading;
+package fintech.loan;
 
-// Refactor code :
-// Change even thread name to Thread-even
-// The main should print end of program only after all the threads EvenThread and OddThread completes execution. Hint : Thead API for methods in Thread class
-// After printing "End of the program!" wait for 5 seconds, print "Thankyou!!!" and the program halts.
-// Catch the appropriate CheckedExceptions.
-// Refactor the OddThread class to make it a thread.
-// Implement the Odd thead.
-// The program should have total of three threads to do the work.
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MultiThreadedEx {
-    public static void main(String[] args) {
-        System.out.println("Multithreaded Threaded App! ONE process with Three Threads");
-        Thread currentThread = Thread.currentThread();
-        currentThread.setName("Thread-main");
-        System.out.println(currentThread.getName());
-        EvenThread evenThread = new EvenThread();
-        evenThread.start();
-//        compute.odd();
-//        for(int i = 0; i<500000000; i++) {
-//            String justToAddSomeProcessingLoad = "" + i;
-//        }
-        System.out.println();
-        // join evenThread and oddThread
-        // sleep for 5 seconds
-        System.out.println("End of the program! " + currentThread.getName());
+public class Loan {
+    private BigDecimal principal;
+    private LocalDate startDate;
+    private int termMonths;
+
+    public Loan(BigDecimal principal, LocalDate startDate, int termMonths) {
+        this.principal = principal;
+        this.startDate = startDate;
+        this.termMonths = termMonths;
+    }
+
+    public BigDecimal getPrincipal() {
+        return principal;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public int getTermMonths() {
+        return termMonths;
     }
 }
-class Compute1 {
-    public void even(){
-        for (int i = 2; i <= 50; i+=2) {
-            System.out.println("EVEN " + i + " " + Thread.currentThread().getName()) ;
+
+class Customer {
+    private String name;
+    private String email;
+    private List<Loan> loans;
+
+    public Customer(String name, String email) {
+        this.name = name;
+        this.email = email;
+        this.loans = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public List<Loan> getLoans() {
+        return loans;
+    }
+
+    public void addLoan(Loan loan) {
+        loans.add(loan);
+    }
+}
+
+class DatabaseUtil {
+    public static Connection getConnection() {
+        return null;
+    }
+}
+
+class LoanService {
+    private BigDecimal totalOutstanding;
+    private List<Loan> allLoans;
+    private List<Customer> allCustomers;
+
+    public LoanService() {
+        this.totalOutstanding = BigDecimal.ZERO;
+        this.allLoans = new ArrayList<>();
+        this.allCustomers = new ArrayList<>();
+    }
+
+    public void processLoan(BigDecimal amount, Customer customer) {
+        LocalDate applicationDate = LocalDate.now();
+        ArrayList<Loan> loans = new ArrayList<Loan>();
+        BigDecimal calculatedInterest = calculateInterest(amount);
+        Loan loan = new Loan(amount, applicationDate, 12);
+        loans.add(loan);
+        customer.addLoan(loan);
+        String message = String.format("Loan of %s granted to %s", amount, customer.getName());
+        System.out.println(message);
+        try (Connection connection = DatabaseUtil.getConnection()) {
+            Object loanData = connection != null
+                ? connection.createStatement().executeQuery("SELECT principal FROM Loan").getObject(1)
+                : null;
+            List<Customer> customers = List.of(new Customer("Alice", "alice@email.com"));
+            List<String> names = customers.stream()
+                .map(c -> c.getName())
+                .toList();
+        } catch (SQLException ex) {
+            System.out.println("SQL Error: " + ex.getMessage());
+        } catch (Exception ex) {
+            System.out.println("Error Processing Loan: " + ex.getMessage());
         }
     }
-    public void odd(){
-        for (int i = 1; i <= 50; i+=2) {
-            System.out.println("ODD " + i + " " + Thread.currentThread().getName()) ;
+
+    private BigDecimal calculateInterest(BigDecimal amount) {
+        return amount.multiply(BigDecimal.valueOf(0.05));
+    }
+
+    public void addLoan(Loan loan) {
+        allLoans.add(loan);
+        totalOutstanding = totalOutstanding.add(loan.getPrincipal());
+    }
+
+    public void addCustomer(Customer customer) {
+        allCustomers.add(customer);
+    }
+
+    public List<Loan> getAllLoans() {
+        return allLoans;
+    }
+
+    public List<Customer> getAllCustomers() {
+        return allCustomers;
+    }
+
+    public void printLargeLoans(BigDecimal threshold) {
+        ArrayList<Loan> largeLoans = new ArrayList<Loan>();
+        for (Loan loan : allLoans) {
+            if (loan.getPrincipal().compareTo(threshold) > 0) {
+                largeLoans.add(loan);
+            }
+        }
+        for (Loan l : largeLoans) {
+            System.out.println("Large loan: " + l.getPrincipal());
         }
     }
 }
-
-class ComputeOdd {
-    public void odd(){
-        for (int i = 1; i <= 50; i+=2) {
-            System.out.println("ODD " + i + " " + Thread.currentThread().getName()) ;
-        }
-    }
-}
-
-class EvenThread extends Thread {
-    @Override
-    public void run() {
-        Compute1 compute = new Compute1();
-        compute.even();
-    }
-}
-
-// Practice : Create the odd thread
-class OddThread  extends ComputeOdd implements Runnable {
-    @Override
-    public void run() {
-        odd();
-    }
-}
-
-```  
-
-Expected Output:  
 ```
-Multithreaded Threaded App! ONE process with THREEE Threads  
-Thread-main  
-EVEN 2 Thread-even  
-EVEN 4 Thread-even  
-...  
-ODD 1 Thread-odd  
-ODD 3 Thread-odd  
-...  
-End of the program! Thread-main  
-Thank you!!!  
-```  
----  
+
+
+## Expected Output
+
+- Code compiles and runs without errors.
+- All uses of `var` follow best practices.
+- Comments in code explain the rationale for using or not using `var`.
+
+---
