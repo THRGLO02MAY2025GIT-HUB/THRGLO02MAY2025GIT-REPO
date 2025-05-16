@@ -35,6 +35,9 @@ The `CompactNumberFormattingDemo` class demonstrates how to use the `NumberForma
     - Format numbers for different locales (US, Germany, Japan).
     - Observe differences in notation, decimal separators, and scale words.
 
+5. **Indian Numbering System**:
+    - Format numbers using the Indian numbering system (e.g., Lakhs, Crores).
+    - Observe how the formatting differs from the Western system.
 ---
 
 ## Lab Instructions
@@ -70,9 +73,13 @@ The `CompactNumberFormattingDemo` class demonstrates how to use the `NumberForma
 2. Format `1234567.89` for US, Germany, and Japan locales.
 3. Print the results and compare the formatting conventions.
 
+### Step 5: Indian Numbering System Formatting
+1. Implement the `demoIndianNumberingFormatting()` method.
+2. Format numbers using the Indian numbering system (e.g., Lakhs, Crores).
+3. Observe how the formatting differs from the Western system.
 ---
 
-### Step 5: Experiment and Extend
+### Step 6: Experiment and Extend
 
 1. Try formatting other numbers (e.g., 5000, 10000000) and observe the output.
 2. Experiment with other locales (e.g., France, India).
@@ -104,8 +111,8 @@ public class CompactNumberFormattingDemo {
         demoTransactionFormatting();
         System.out.println("Precision Formatting");
         demoPrecisionFormatting();
-        System.out.println("International Formatting ");
-        demoInternationalFormatting();
+        System.out.println("Indian Numbering System Formatting");
+        demoIndianNumberingFormatting();
     }
 
     private static void demoBasicFormatting() {
@@ -131,6 +138,41 @@ public class CompactNumberFormattingDemo {
     private static void demoInternationalFormatting() {
         // TODO: Implement international formatting for US, Germany, and Japan
     }
+
+    private static void demoIndianNumberingFormatting() {
+        // Create formatters with different configurations
+
+        // Configure precision and grouping maximum 3 and minimum 1 fraction digit
+
+
+        // Test values in Indian numbering system
+        double[] amounts = {
+                12345.6789,      // Thousands
+                1234567.89,      // Lakhs
+                12345678.901,    // Crores
+                1234567890.123   // Arabs
+        };
+
+        // Code to geneate and print output.
+
+        // For additioanl reference (not needed to be a part of solution)
+        //Structure: value, name, international format 
+        Object[][] numberScales = {
+            {1_000L,                    "Thousand"},
+            {10_000L,                   "Ten Thousand"},
+            {1_00_000L,                 "Lakh"},
+            {10_00_000L,                "Ten Lakh"},
+            {1_00_00_000L,              "Crore"},
+            {10_00_00_000L,             "Ten Crore"},
+            {1_00_00_00_000L,           "Arab"},
+            {10_00_00_00_000L,          "Ten Arab"},
+            {1_00_00_00_00_000L,        "Kharab"},
+            {10_00_00_00_00_000L,       "Ten Kharab"},
+            {1_00_00_00_00_00_000L,     "Neel"},
+            {10_00_00_00_00_00_000L,    "Ten Neel"},
+            {1_00_00_00_00_00_00_000L,  "Padma"}
+        };
+    }
 }
 ```
 
@@ -140,19 +182,25 @@ public class CompactNumberFormattingDemo {
 
 ```
 Basic Formatting
-1K
-1M
-1B
 Transaction Formatting
-Short: 1.2M
-Long: 1.2 million
 Precision Formatting
-1.23K
-1.23M
 International Formatting 
-US: 1.2M
-DE: 1,2 Mio.
-JP: 120万
+US: 1M
+DE: 1 Mio.
+JP: 123万
+Indian Numbering System Formatting
+-------------------------------------------
+Amount: 12.346T (Currency: ₹12,345.68)
+Percent of billion: 0.00%
+
+Amount: 12.346L (Currency: ₹1,234,567.89)
+Percent of billion: 0.12%
+
+Amount: 1.235Cr (Currency: ₹12,345,678.90)
+Percent of billion: 1.23%
+
+Amount: 123.457Cr (Currency: ₹1,234,567,890.12)
+Percent of billion: 123.46%
 ```
 
 ---

@@ -40,25 +40,25 @@
           <mxGeometry x="460" y="290" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-9" value="Walking through the CallStack" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
-          <mxGeometry x="810" y="280" width="80" height="80" as="geometry" />
+          <mxGeometry x="900" y="300" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-10" value="CompactStrings" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
           <mxGeometry x="410" y="545" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-11" value="SwitchExpressions" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
-          <mxGeometry x="530" y="540" width="105" height="105" as="geometry" />
+          <mxGeometry x="660" y="530" width="105" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="dxzc5Opw5BWFp04rEgw8-12" value="Compact Number Formatting&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
-          <mxGeometry x="740" y="535" width="115" height="115" as="geometry" />
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-12" value="Compact Number Formatting&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+          <mxGeometry x="540" y="542.5" width="95" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="dxzc5Opw5BWFp04rEgw8-13" value="&lt;div&gt;TextBlocks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+        <mxCell id="dxzc5Opw5BWFp04rEgw8-13" value="&lt;div&gt;TextBlocks&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
           <mxGeometry x="410" y="640" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-14" value="&lt;div&gt;Records&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
           <mxGeometry x="540" y="660" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-15" value="&lt;div&gt;Sealed Classes&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
-          <mxGeometry x="747.5" y="670" width="100" height="100" as="geometry" />
+          <mxGeometry x="670" y="650" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dxzc5Opw5BWFp04rEgw8-16" value="&lt;div&gt;JPMS&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
           <mxGeometry x="290" y="660" width="100" height="100" as="geometry" />
