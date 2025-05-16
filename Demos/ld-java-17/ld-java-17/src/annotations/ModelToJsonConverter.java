@@ -55,7 +55,9 @@ public class ModelToJsonConverter {
         Set<Map.Entry<String,String>> jsonElementEntrySet = jsonElementMap.entrySet();
         String jsonString = jsonElementEntrySet
                 .stream()
-                .map(entry -> "\"" + entry.getKey() + "\":\"" + entry.getValue() + "\"")
+                .map(entry -> "\"" + entry.getKey()
+                 + "\":\"" + entry.getValue() 
+                 + "\"")
                 .collect(Collectors.joining(","));
         System.out.println("DEBUG : " + jsonString);
        return "Expected output : " + "{" + jsonString + "}";
