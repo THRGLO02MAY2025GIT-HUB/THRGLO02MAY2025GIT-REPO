@@ -76,8 +76,17 @@ public class TextBlocksDemo {
                         "currency" : "USD"
                     },
                 """;
-        System.out.println("JSON : \n" + json);
 
+        String json1 = """
+                {
+                    "transaction" : {
+                        "amount" : 100.00,
+                        "currency" : "GBP"
+                    },
+                """;
+        System.out.println("JSON : \n" + json);
+        String concatenated = json + json1;
+        System.out.println("Concatenated :  + " + concatenated);
         System.out.println("Using with String Builder");
         StringBuilder builder = new StringBuilder();
         builder.append(json);
@@ -106,5 +115,21 @@ public class TextBlocksDemo {
         // No limitation on no of lines
         // Maximum size is that of string
 
+        String emailPattern = """
+        [a-zA-Z0-9...]@[a-zA-Z0-9...]
+        """;
+
+        String textBlock = """
+                This is a text block""";
+        System.out.println("Text block ending in same line : " + textBlock);
+        String regularString = textBlock;
     }
 }
+
+
+// Lab Exercise : Thinking hats on
+// Are text blocks immutable? Yes, immutable and thread safe.
+// Can we use them in annotations? No
+// Try concatenating text blocks : Yes
+// Try using them regular expressions : Yes
+// Try converting textblocks to a regular string
