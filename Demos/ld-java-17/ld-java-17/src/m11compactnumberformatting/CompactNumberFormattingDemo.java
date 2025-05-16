@@ -32,6 +32,7 @@ public class CompactNumberFormattingDemo {
         numberFormat.setMaximumFractionDigits(2);
         System.out.println(numberFormat.format(23456));
         // 23456 23.46K
+        System.out.println(numberFormat.format(10000));
         // 100000 to 100K
         // Try trillion too, put the number of zero's for trillion
         // Like the SHORT format, try LONG format too.
