@@ -243,6 +243,259 @@ public interface TransactionProcessor {
 }
 ```
 
+:beginner: _**New Stack-Walking API**_  
+
+:beginner: _**Compact Strings**_  
+
+## What are Compact Strings?
+Compact Strings optimize the internal representation of String objects by using a byte array instead of a char array when possible. This feature is especially beneficial in FinTech applications where large volumes of ASCII-based financial data are processed.
+
+## Benefits for FinTech Applications
+- Reduced memory footprint for string-heavy operations
+- Improved performance in financial data processing
+- More efficient handling of transaction records
+- Better resource utilization in high-frequency trading systems
+
+## Technical Implementation
+```java
+// Before Java 9
+String transaction = new String("TXN123"); // Uses 2 bytes per character
+
+// After Java 9
+String transaction = "TXN123"; // Uses 1 byte per character when possible
+```
+
+## Feature Comparison Table
+
+| Aspect              | Traditional Strings          | Compact Strings                    |
+|---------------------|-----------------------------|------------------------------------|
+| Memory Usage        | 2 bytes per character       | 1 byte for Latin-1, 2 bytes for others |
+| Performance Impact  | Baseline                    | Up to 15% memory savings           |
+| Character Encoding  | UTF-16                      | Latin-1 or UTF-16                  |
+| Best Use Case       | Unicode-heavy text          | ASCII financial data               |
+
+:beginner: _**Local-Variable Type Inference**_  
+
+Local Variable Type Inference (LVTI) is a feature introduced in Java 10 that allows you to declare local variables without explicitly stating their type. Instead, the compiler infers the type based on the context.
+
+
+
+## Key Points
+
+- Uses the `var` keyword
+- Only works for local variables
+- The type is inferred at compile-time
+- Requires initialization at declaration
+
+## Example
+
+```java
+var message = "Hello World"; // infers String
+var number = 42;            // infers int
+var list = new ArrayList<String>(); // infers ArrayList<String>
+```
+
+## Best Practices
+
+1. Use when the type is obvious from the initialization
+2. Avoid in cases where type clarity is important
+3. Don't use just to shorten long type names-+-+-+-+-+
+
+## Do's and Don'ts
+
+| Do ✅ | Don't ❌ |
+|-------|----------|
+| Use `var` when type is obvious | Use `var` with raw types |
+| Use with well-named methods | Use in complex lambda expressions |
+| Use for loop iterators | Use for method parameters |
+| Use for short, local scopes | Use for class fields |
+| Use with diamond operator | Use when type is unclear |
+
+
+:beginner: _**Switch Expressions**_  
+
+:beginner: _**Pattern Matching**_  
+
+:beginner: _**Compact Number Formatting**_  
+
+Compact Number Formatting is a feature in Java that allows formatting numbers in a human-readable format, particularly useful for displaying large numbers in financial applications.
+
+## Basic Usage
+
+```java
+// NumberFormat.getCompactNumberInstance creates a formatter with specified locale and style
+// Style.SHORT produces abbreviated formats (K for thousands, M for millions, B for billions)
+// Style.LONG produces full word formats (thousand, million, billion)
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class CompactNumberFormattingDemo {
+    public static void main(String[] args) {
+        System.out.println("Basic Compact Number Demo:");
+        demoBasicFormatting();
+        
+        System.out.println("\nTransaction Formatting Demo:");
+        demoTransactionFormatting();
+        
+        System.out.println("\nPrecision Formatting Demo:");
+        demoPrecisionFormatting();
+        
+        System.out.println("\nInternational Formatting Demo:");
+        demoInternationalFormatting();
+    }
+
+    private static void demoBasicFormatting() {
+        NumberFormat fmt = NumberFormat.getCompactNumberInstance(
+            Locale.US, NumberFormat.Style.SHORT);
+        // K represents thousands (Kilo) - 1000 becomes 1K
+        System.out.println(fmt.format(1000));        // 1K
+        // M represents millions (Mega) - 1000000 becomes 1M
+        System.out.println(fmt.format(1000000));     // 1M
+        // B represents billions (Billion) - 1000000000 becomes 1B
+        System.out.println(fmt.format(1000000000));  // 1B
+    }
+
+    private static void demoTransactionFormatting() {
+        // SHORT style uses abbreviated symbols (K, M, B)
+        NumberFormat shortFmt = NumberFormat.getCompactNumberInstance(
+            Locale.US, NumberFormat.Style.SHORT);
+        // LONG style spells out the scale (thousand, million, billion)
+        NumberFormat longFmt = NumberFormat.getCompactNumberInstance(
+            Locale.US, NumberFormat.Style.LONG);
+        
+        double amount = 1234567.89;
+        // Formats to 1.2M - rounds to one decimal place by default
+        System.out.println("Short: " + shortFmt.format(amount));
+        // Formats to "1.2 million" - full word representation
+        System.out.println("Long: " + longFmt.format(amount));
+    }
+
+    private static void demoPrecisionFormatting() {
+        NumberFormat fmt = NumberFormat.getCompactNumberInstance(
+            Locale.US, NumberFormat.Style.SHORT);
+        // Controls number of decimal places in the formatted output
+        fmt.setMaximumFractionDigits(2);
+        
+        // Shows 1.23K instead of 1.2K - more precise representation
+        System.out.println(fmt.format(1234));
+        // Shows 1.23M instead of 1.2M - maintaining 2 decimal places
+        System.out.println(fmt.format(1234567));
+    }
+
+    private static void demoInternationalFormatting() {
+        double amount = 1234567.89;
+        // US format uses K, M, B notation
+        NumberFormat usFmt = NumberFormat.getCompactNumberInstance(
+            Locale.US, NumberFormat.Style.SHORT);
+        // German format uses Tsd. (thousand) and Mio. (million)
+        NumberFormat gerFmt = NumberFormat.getCompactNumberInstance(
+            Locale.GERMANY, NumberFormat.Style.SHORT);
+        // Japanese format uses 万 (10000) and 億 (100 million) as bases
+        NumberFormat jpFmt = NumberFormat.getCompactNumberInstance(
+            Locale.JAPAN, NumberFormat.Style.SHORT);
+        
+        // US uses period as decimal separator
+        System.out.println("US: " + usFmt.format(amount));
+        // German uses comma as decimal separator and Mio. for million
+        System.out.println("DE: " + gerFmt.format(amount));
+        // Japanese uses 万 (man) which represents 10000
+        System.out.println("JP: " + jpFmt.format(amount));
+    }
+}
+```
+
+:beginner: _**Text Blocks**_  
+
+A text block is a multi-line string literal that avoids the need for most escape sequences, automatically formats the string in a predictable way, and gives the developer control over the format when desired.
+
+## Questions and Answers About Text Blocks
+
+1. **Q: What are text blocks?**
+    ```java
+    String example = """
+         Text blocks are multi-line
+         string literals with automatic
+         formatting support
+         """;
+    ```
+
+2. **Q: How do you start a text block?**
+    ```java
+    String block = """
+         Start with three double quotes
+         on a new line
+         """;
+    ```
+
+3. **Q: Can text blocks contain quotes?**
+    ```java
+    String quotes = """
+         "Yes, they can contain 'single'
+         and "double" quotes freely"
+         """;
+    ```
+
+4. **Q: How is indentation handled?**
+    ```java
+    String indent = """
+              This line is indented
+         This line isn't
+              Back to indent
+         """;
+    ```
+
+5. **Q: Can you use escape characters?**
+    ```java
+    String escaped = """
+         Yes! Use \n for new lines
+         \t for tabs, etc.
+         """;
+    ```
+    6. **Q: Does it support Unicode characters?**
+        ```java
+        String unicode = """
+             Yes! 💰 €uro ¥en 元
+             International currency symbols
+             are fully supported
+             """;
+        ```
+
+    7. **Q: How are line terminators handled?**
+        ```java
+        String lines = """
+             Each line ends with \n
+             automatically. Explicit line
+             breaks can be added\n\n
+             """;
+        ```
+
+    8. **Q: Can text blocks be concatenated?**
+        ```java
+        String combined = """
+             First block
+             """ + """
+             Second block
+             """;
+        ```
+
+    9. **Q: Are there performance implications?**
+        ```java
+        String optimized = """
+             Text blocks are optimized
+             at compile time for
+             better performance
+             """;
+        ```
+
+    10. **Q: How is whitespace handled?**
+        ```java
+        String whitespace = """
+             Leading spaces are based on
+                the closing delimiter position.
+             Trailing spaces are preserved  
+             """;
+        ```
+
 :beginner: _**Records**_  
 
 Modern Java syntax for immutable data transfer objects  
@@ -261,3 +514,7 @@ Useful for financial transactions and data models
 | equals/hashCode   | Manual implementation needed                              | Auto-generated                        | Consistent object comparison   |
 | toString          | Custom implementation required                            | Auto-generated readable format        | Better debugging experience    |
 | Encapsulation    | Manual private fields + getters                           | Automatic component encapsulation     | Safer data handling           |
+
+:beginner: _**Sealed Classes**_  
+
+:beginner: _**Modular System (Project Jigsaw) && Strong encapsulation of JDK internals**_  
