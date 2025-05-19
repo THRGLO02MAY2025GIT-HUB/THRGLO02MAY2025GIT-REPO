@@ -2008,10 +2008,10 @@
         <mxCell id="rszQveMc-oa4ue0RBCWx-30" value="other frames...." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
           <mxGeometry x="40" y="660" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rszQveMc-oa4ue0RBCWx-31" value="Standard API for traversing selected Frames" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+        <mxCell id="rszQveMc-oa4ue0RBCWx-31" value="Standard API for traversing selected Frames" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="600" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rszQveMc-oa4ue0RBCWx-32" value="The stack frames are lazily evaluated." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+        <mxCell id="rszQveMc-oa4ue0RBCWx-32" value="The stack frames are lazily evaluated." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="740" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rszQveMc-oa4ue0RBCWx-33" value="Better performance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
