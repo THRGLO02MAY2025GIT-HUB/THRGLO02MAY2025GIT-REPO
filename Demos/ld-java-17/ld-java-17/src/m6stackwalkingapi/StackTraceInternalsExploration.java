@@ -1,12 +1,12 @@
 package m6stackwalkingapi;
 
-public class StackTraceSimple {
+public class StackTraceInternalsExploration {
     public static void main(String[] args) {
         StackTraceElement[] stackTraceElements =   Thread.currentThread().getStackTrace();
         System.out.println(stackTraceElements);
 
         try {
-            new StackTraceSimple().makePayment();
+            new StackTraceInternalsExploration().makePayment();
         }
         catch (Exception exception) {
          StackTraceElement[] stackTraceElements1 =   Thread.currentThread().getStackTrace();
