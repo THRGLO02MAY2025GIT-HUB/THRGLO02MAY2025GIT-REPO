@@ -1,8 +1,5 @@
 :books: **THE MASTER GUIDE TO JAVA 17+**  
                 
-:books: **Author : Subramanian P**  
-
-
 
 :beginner: _**Diamond Operator for Anonymous Inner Classes**_  
 ## Introduction
