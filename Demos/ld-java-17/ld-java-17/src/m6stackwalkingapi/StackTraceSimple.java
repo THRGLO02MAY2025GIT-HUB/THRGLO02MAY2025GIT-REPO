@@ -32,7 +32,7 @@ public class StackTraceSimple {
         System.out.println("Logging transaction  .... error.....");
         try {
             throw new RuntimeException("Logging failure as database is down!");
-        } catch (Exception exception) {
+        } catch (Throwable exception) {
             StackTraceElement[] stackTraceElementsFromThrowable = exception.getStackTrace();
             System.out.println(stackTraceElementsFromThrowable);
             StackTraceElement[] stackTraceElementsFromCurrentThread =   Thread.currentThread().getStackTrace();
