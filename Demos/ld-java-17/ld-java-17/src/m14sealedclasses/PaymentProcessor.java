@@ -1,5 +1,5 @@
 package m14sealedclasses;
-
+// Start with Why?
 sealed interface DigitalPayment permits CreditCardPayment, DebitCardPayment{
     double getAmount();
 
