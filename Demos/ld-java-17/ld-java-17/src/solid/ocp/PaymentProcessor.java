@@ -74,10 +74,11 @@ class OCPMain {
         registry.register("stripe", new StripeProcessor());
         registry.register("paypal", new PayPalProcessor());
         registry.register("crypto", new CryptoProcessor());
-        //Lab : resister Amazon Pay
+        //Lab : register Amazon Pay
         OCPCompliantPaymentService service = new OCPCompliantPaymentService(registry);
 
         service.handle("stripe", 500, "acct-001");
         service.handle("crypto", 1200, "wallet-xyz");
+        //Lab make payment using Amazon Pay
     }
 }
