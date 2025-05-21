@@ -60,10 +60,17 @@ class EmailNotifier implements Notifier {
     }
 }
 
-// The Orchestrator is compliant with SRP as it has only one reason to change : payment orchestration.
+// The Orchestrator (is compliant with SRP as it has only one reason to change : payment orchestration.
 // Orchestrator - acts a mediator between different components
 // coordinating their interactions
 // without being tightly coupled to their implementations
+
+// What patterns does this orchestrator  (SRPCompliantPaymentService) code fit into?
+// Facade pattern : provides a simplified interface to a complex subsystem (payment processing, fraud detection, logging, notifying)
+// Mediator pattern (though loosely) : mediates the interactions among different services and components, keeping them loosely coupled
+
+// What Architecture does the Orchestrator fit into?
+// Fits well into Service Oriented Architecture because it coordinates different domain services (payment processing, fraud detection, logging, notification)
 public class SRPCompliantPaymentService {
     private final Map<String, PaymentProcessor> gateways;
     private final FraudChecker fraudChecker;
@@ -77,16 +84,16 @@ public class SRPCompliantPaymentService {
         this.notifier = notifier;
     }
 
-    public void handle(String gateway, double amount, String email ) {
+    public void handle(String gateway, double amount, String email) {
         logger.log("Initiating payment");
 
-        if(fraudChecker.isFraudulent(amount)) {
+        if (fraudChecker.isFraudulent(amount)) {
             logger.log("Fraud blocked payment of $" + amount);
             return;
         }
 
         PaymentProcessor processor = gateways.get(gateway);
-        if(processor == null) {
+        if (processor == null) {
             logger.log("Invalid gateway: " + gateway);
             return;
         }
