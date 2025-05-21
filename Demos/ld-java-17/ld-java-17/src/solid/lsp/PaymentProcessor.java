@@ -24,3 +24,9 @@ class CryptoProcessor implements PaymentProcessor {
         System.out.println("Crypto sent $" + amount);
     }
 }
+
+class AdvancedCryptoProcessor implements PaymentProcessor {
+    public void process(double amount, String account) {
+        System.out.println("Advanced Crypto sent $" + amount);
+    }
+}

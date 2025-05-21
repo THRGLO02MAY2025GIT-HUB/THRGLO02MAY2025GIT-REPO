@@ -23,3 +23,11 @@ class CryptoGateway extends AbstractPaymentGateway {
         throw new UnsupportedOperationException("Crypto payments are non-refundable");
     }
 }
+
+class ViolationMain {
+    public static void main(String[] args) {
+        AbstractPaymentGateway gateway = new CryptoGateway();
+        gateway.process(5.0, "wallet-xyz");
+        gateway.refund(5.0, "wallet-xyz");
+    }
+}
