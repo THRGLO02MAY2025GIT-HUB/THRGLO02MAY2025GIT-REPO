@@ -29,6 +29,10 @@ class CryptoProcessor implements PaymentProcessor {
 
 // Lab : Add AmazonPay Processor
 // STEP 3 : Registry - Open for extension via injection
+// Open for extension because it
+// 1. allows adding new payment processors without coding changes
+// 2. supports runtime registration of processors
+// 3. no modification of existing code needed.
 class PaymentGatewayRegistry {
     private final Map<String, PaymentProcessor> gatewayMap = new HashMap<>();
 
@@ -42,6 +46,10 @@ class PaymentGatewayRegistry {
 }
 
 // STEP 4 : Orcherstrator (closed for modification)
+// Closed for modification because
+// 1. The core payment flow remains unchanged
+// 2. New processors don't require orchestration changes
+// 3. Business logic is encapsulated
 class OCPCompliantPaymentService {
     private final PaymentGatewayRegistry registry;
 
