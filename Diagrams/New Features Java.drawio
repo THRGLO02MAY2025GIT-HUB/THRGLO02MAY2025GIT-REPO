@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="16">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="17">
   <diagram id="fK4nWK5H1XwcULgVddXd" name="Your own wonderful space..... please paint it as you wish and learn....">
     <mxGraphModel dx="786" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -377,7 +377,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bHqhL_okxHXkL8069b3K" name="Functional Programming">
-    <mxGraphModel dx="1636" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1636" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2425,6 +2425,179 @@
         </mxCell>
         <mxCell id="oslzfKKXUB6l2ilILEBa-4" value="&lt;div&gt;High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).&lt;/div&gt;&lt;div&gt;Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="1400" y="260" width="290" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="099gRsAr3Rc1qG6VbRJ6" name="JPMS">
+    <mxGraphModel dx="786" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eDTgrATMIgquH-w0TjQf-2" value="MODULES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="290" y="830" width="810" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-38" value="CLASSPATH" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="80" y="890" width="180" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-33" value="packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="320" y="870" width="370" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-31" value="Class" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="380" y="880" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-1" value="JPMS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="240" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-2" value="System introduced in Java 9" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-3" value="Modularize our code by creating multiple modules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="130" y="280" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JRl98ZVYfz0RjRyR2y7N-4" target="JRl98ZVYfz0RjRyR2y7N-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-4" value="Module : Self contained unit of code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="130" y="360" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-5" value="Encapsulation at the Jar level" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="130" y="440" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-6" value="Explicitly declares the parts it exports and makes it public to the other modules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="130" y="520" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-7" value="Declares whith other modules it depends on" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="130" y="610" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JRl98ZVYfz0RjRyR2y7N-8" target="JRl98ZVYfz0RjRyR2y7N-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JRl98ZVYfz0RjRyR2y7N-8" target="JRl98ZVYfz0RjRyR2y7N-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-8" value="Contains a special file name module-info.java" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-10" value="The Java Platform Module System (JSR 376) specifies changes and extensions to the Java programming language, the Java virtual machine, and the standard Java APIs." style="text;whiteSpace=wrap;html=1;fontStyle=0;fontSize=15;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="410" y="50" width="560" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-11" value="JSR (Java Specification Request)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="80" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-12" value="JEP (JDK Enhancement Proposal)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="80" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-13" value="A formal document that describes the proposed specification and technologies for adding to the Java Platform." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="170" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-14" value="A proposal for enhancements or features to the JDK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="170" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-15" value="Purpose : Define API&#39;s, language featues, or enhancements to be included in Java" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="250" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-16" value="Used by the OpenJDK project to discuss about including new APIs, tools, changes to the JVM or language&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="250" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-17" value="Managed by JCP (Java Community Process)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="330" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-18" value="Managed by OpenJDK community" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="330" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-19" value="Focus : Broad Java Specs (APIs, language)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="410" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-20" value="JDK enhancements, internal improvements." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="410" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-21" value="exports : api that has to be available to other modules" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-23" value="requires : api that it needs from other modules" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-25" value="Purpose : Organize code into modules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="130" y="210" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-26" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;module com.domain.app {&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;requires java.sql;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exports com.domain.api&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;align=left;" vertex="1" parent="1">
+          <mxGeometry x="690" y="330" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-27" value="True encapsulation at the JAR level." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" vertex="1" parent="1">
+          <mxGeometry x="310" y="135" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-28" value="Encapsulation / TRUE ENCAPSULATION AT THE JAR LEVEL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1180" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-29" value="(private) variables" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-30" value="(private) methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="410" y="960" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-32" value="variables declared in methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="425" y="970" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-34" value="&lt;span style=&quot;color: rgb(19, 21, 22); font-family: system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans&amp;quot;, &amp;quot;Liberation Sans&amp;quot;, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 20px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;MODULES : The Java APIs are organized into methods, classes, packages, and - at the highest level - modules.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="100" y="740" width="750" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-35" value="spring jars / with its dependencies" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-36" value="hibernate jar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-37" value="third-party library jar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-39" value="PROBLEMS IN NON-MOUDLAR APPS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1190" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-43" value="No clear boundaries&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1260" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-47" value="All classes could see each other, even internal ones that shuld&#39;nt be used outside [FLATTENED]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1330" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-48" value="Naming conflicts : when two libraries had classes with same name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1410" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-49" value="Versioning issues : No simple way to way to use different versions of the same libary in one app." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1490" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-50" value="Internal classes were&amp;nbsp; accesible and malicious code can misuse them." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1580" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-53" value="Large runtime : Java runtime came with a big set of libraries, you cannot strip down to what you need for your project." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1660" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JRl98ZVYfz0RjRyR2y7N-54" value="SOLUTION&amp;nbsp;&lt;div&gt;JPMS as it helps Modulaize Java by : CREATING clear, SELF-CONTAINED UNITS that can DEFINE what they&amp;nbsp;&lt;/div&gt;&lt;div&gt;SHARE and what stays PRIVATE&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1250" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-1" value="SOLUTION&amp;nbsp;&lt;div&gt;JPMS as it helps Modulaize Java by : CREATING clear, SELF-CONTAINED UNITS that can DEFINE what they&amp;nbsp;&lt;/div&gt;&lt;div&gt;SHARE and what stays PRIVATE&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="360" y="540" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-3" value="NO STRONG ENCAPSULATON :&amp;nbsp;&lt;div&gt;Before JPMS, if a&amp;nbsp; class was public :&lt;/div&gt;&lt;div&gt;it was accessible everywhere, even if was only intended for internal use.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="590" y="610" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-5" value="STRONG ENCAPSULATON WITH JPMS:&amp;nbsp;&lt;div&gt;AfterJPMS, only exported packages are visible to other modules, so you can have public class inside non-exported packages that remain hidden.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="610" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-7" value="packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="710" y="870" width="370" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-8" value="Class" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="770" y="880" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-9" value="(private) variables" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="800" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-10" value="(private) methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="800" y="960" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eDTgrATMIgquH-w0TjQf-11" value="variables declared in methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="815" y="970" width="90" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
