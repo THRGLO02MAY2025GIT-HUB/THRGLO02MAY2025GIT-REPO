@@ -2409,10 +2409,10 @@
           <mxGeometry x="890" y="180" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ii2UQsd3VrOBpdT4jvhx-42" value="INTERFACE SEGREGATION PRINCIPLE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="180" width="240" height="60" as="geometry" />
+          <mxGeometry x="1140" y="180" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ii2UQsd3VrOBpdT4jvhx-43" value="DEPENDENCY INVERSION PRINCIPLE&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
-          <mxGeometry x="1470" y="180" width="290" height="60" as="geometry" />
+          <mxGeometry x="1400" y="180" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oslzfKKXUB6l2ilILEBa-1" value="software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="620" y="250" width="230" height="110" as="geometry" />
@@ -2421,10 +2421,10 @@
           <mxGeometry x="890" y="250" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="oslzfKKXUB6l2ilILEBa-3" value="Clients should not be forced to depend on interfaces they do not use" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="250" width="240" height="110" as="geometry" />
+          <mxGeometry x="1140" y="250" width="240" height="110" as="geometry" />
         </mxCell>
         <mxCell id="oslzfKKXUB6l2ilILEBa-4" value="&lt;div&gt;High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).&lt;/div&gt;&lt;div&gt;Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="260" width="280" height="120" as="geometry" />
+          <mxGeometry x="1400" y="260" width="290" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
