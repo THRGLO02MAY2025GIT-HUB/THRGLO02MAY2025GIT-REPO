@@ -2430,7 +2430,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="099gRsAr3Rc1qG6VbRJ6" name="JPMS">
-    <mxGraphModel dx="786" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="655" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2444,7 +2444,7 @@
           <mxGeometry x="320" y="870" width="370" height="260" as="geometry" />
         </mxCell>
         <mxCell id="JRl98ZVYfz0RjRyR2y7N-31" value="Class" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="380" y="880" width="240" height="200" as="geometry" />
+          <mxGeometry x="380" y="880" width="300" height="200" as="geometry" />
         </mxCell>
         <mxCell id="JRl98ZVYfz0RjRyR2y7N-1" value="JPMS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="240" y="50" width="150" height="60" as="geometry" />
@@ -2598,6 +2598,27 @@
         </mxCell>
         <mxCell id="eDTgrATMIgquH-w0TjQf-11" value="variables declared in methods" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
           <mxGeometry x="815" y="970" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-1" value="public" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-2" value="packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1290" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-3" value="packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1290" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-4" value="packages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1410" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-5" value="public class" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="585" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-6" value="public" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="675" y="1420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tPSwG020tfgrWS2lhQ5H-7" value="public" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="765" y="1300" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
