@@ -11,6 +11,19 @@
 
     <artifactId>banking-app</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.banking</groupId>
+            <artifactId>banking-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.banking</groupId>
+            <artifactId>banking-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 <!--    <properties>-->
 <!--        <maven.compiler.source>17</maven.compiler.source>-->
 <!--        <maven.compiler.target>17</maven.compiler.target>-->
