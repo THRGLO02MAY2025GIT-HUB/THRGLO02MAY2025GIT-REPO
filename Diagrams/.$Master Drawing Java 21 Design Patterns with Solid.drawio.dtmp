@@ -2662,7 +2662,7 @@
         <mxCell id="2ywJWmwQW8BJoGRi3oMp-7" value="banking-app-module" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="830" y="2040" width="260" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="2ywJWmwQW8BJoGRi3oMp-8" value="package" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="2ywJWmwQW8BJoGRi3oMp-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;com.banking.api&lt;div&gt;package&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="230" y="2050" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2ywJWmwQW8BJoGRi3oMp-9" value="package" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;verticalAlign=bottom;" vertex="1" parent="1">
