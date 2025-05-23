@@ -36,7 +36,7 @@ public class DiamondOperatorDemo {
         };
 
         // Java 9+ Diamond operator with anonymous inner class
-        // The diamond operator <> is used to infer the type of the anonymous inner class.
+        // The diamond operator (<>) is used to infer generic type parameters when instantiating generic classes, including anonymous inner classes.
         TransactionProcessor<Transaction> modernProcessor = new TransactionProcessor<>() {
             @Override
             public void process(Transaction transaction) {
